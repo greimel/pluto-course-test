@@ -30,6 +30,9 @@ begin
 	#using SymPy
 end
 
+# ╔═╡ 2fe607a4-22d9-11eb-00aa-a919fb81c721
+md"""**Attention:** This is supplementary material for interested students. The computational material is not relevant for the exam! Prioritize your time wisely! """
+
 # ╔═╡ c6e808da-2100-11eb-22e8-1b96706f2fd6
 md"# Utility and demand"
 
@@ -124,20 +127,20 @@ end
 # ╔═╡ c56ccf08-210b-11eb-05bf-736d5b0b848f
 md"### (b) Marginal rate of substitution (analytical)"
 
+# ╔═╡ e3507a1a-22d7-11eb-1d5f-6b18b9167f59
+@vars x₁ x₂ negative=false
+
 # ╔═╡ bc6411e0-210c-11eb-062a-2d6ebf7d9c96
 Base.show(io::IO, ::MIME"text/latex", x::SymPy.SymbolicObject) = print(io, sympy.latex(x, mode="inline"))
 
 # ╔═╡ a4a905ba-210c-11eb-282e-1b16883f280e
-@vars x₁ x₂ p₁ p₂ m positive=true
+@vars p₁ p₂ m positive=true
 
 # ╔═╡ 6cf6129c-210f-11eb-3244-65ab27c85105
 md"We are currently looking at the following utility function."
 
 # ╔═╡ fbd9a65a-210c-11eb-0a57-4335a3002ba5
 u(x₁, x₂)
-
-# ╔═╡ 7c5405be-210f-11eb-0d9b-15450538de34
-
 
 # ╔═╡ 1f350110-210d-11eb-12f5-0f48067dc473
 begin
@@ -157,6 +160,8 @@ We need to solve the following conditions.
 
 $$\frac{u_1(x_1, x_2)}{u_2(x_1, x_2)} = \frac{p_1}{p_2}$$
 $$p_1 x_1 + p_2 x_2 = m$$
+
+**Beware**, this approach doesn't find corner solutions. In these cases compare the solutions that we derived by hand.
 """
 
 # ╔═╡ 9b47cb32-2111-11eb-3c6f-550f615c564b
@@ -192,6 +197,8 @@ if dx1dm > 0
 	md"The derivative is positive. That is, the *demand rises if income increases*. Good 1 is a *normal good*."
 elseif dx1dm < 0
 	md"The derivative is negative. That is, the *demand falls as income increases*. Good 1 is an *inferior good*."
+elseif dx1dm == 0
+	md"The derivative is zero. That is, the *demand is unchanged as income increases*. Good 1 is an *neither normal nor inferior good*."
 else
 	md"**SymPy failed to given an answer.**"
 end
@@ -228,8 +235,8 @@ else
 end
 
 # ╔═╡ Cell order:
-# ╠═ae5ee7be-2102-11eb-2517-bf07efcd17c4
-# ╠═2fc7676e-2198-11eb-039f-8bf5ed3f4481
+# ╟─2fe607a4-22d9-11eb-00aa-a919fb81c721
+# ╟─ae5ee7be-2102-11eb-2517-bf07efcd17c4
 # ╟─c6e808da-2100-11eb-22e8-1b96706f2fd6
 # ╟─b6c28632-2101-11eb-2a1b-19d744102a45
 # ╠═f0fb1dc4-2100-11eb-1ff4-15c5b095ef74
@@ -241,11 +248,12 @@ end
 # ╠═0ec2258c-2106-11eb-1724-21ec64a074dd
 # ╠═4529e838-2103-11eb-36d1-036bbe732597
 # ╟─c56ccf08-210b-11eb-05bf-736d5b0b848f
+# ╠═2fc7676e-2198-11eb-039f-8bf5ed3f4481
+# ╠═e3507a1a-22d7-11eb-1d5f-6b18b9167f59
 # ╟─bc6411e0-210c-11eb-062a-2d6ebf7d9c96
 # ╠═a4a905ba-210c-11eb-282e-1b16883f280e
 # ╟─6cf6129c-210f-11eb-3244-65ab27c85105
-# ╟─fbd9a65a-210c-11eb-0a57-4335a3002ba5
-# ╠═7c5405be-210f-11eb-0d9b-15450538de34
+# ╠═fbd9a65a-210c-11eb-0a57-4335a3002ba5
 # ╠═1f350110-210d-11eb-12f5-0f48067dc473
 # ╠═cc6a5794-210d-11eb-01b4-c5611a880a6a
 # ╟─f501f2ae-210e-11eb-157b-7bdd57c7675c

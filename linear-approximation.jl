@@ -1,16 +1,15 @@
 ### A Pluto.jl notebook ###
-# v0.12.4
+# v0.12.7
 
 using Markdown
 using InteractiveUtils
-
-# ╔═╡ d45c3ba2-177e-11eb-0141-e7ceee5074bf
-using GRUtils
 
 # ╔═╡ ccde7f0a-1776-11eb-2215-6558131f6482
 begin
 	using Pkg: Pkg, @pkg_str
 	Pkg.activate(mktempdir())
+	Pkg.add("GRUtils")
+	using GRUtils
 end
 
 # ╔═╡ dbac9e1a-1776-11eb-1673-3ba2da7fc0dd
@@ -189,7 +188,6 @@ md"## Appendix"
 # ╠═9a7b88f0-177e-11eb-0119-d3fb9e7d912f
 # ╠═98d130fc-177d-11eb-3543-cfbf6b6905c3
 # ╠═864fc8f2-177e-11eb-00af-af8ba4444c85
-# ╠═d45c3ba2-177e-11eb-0141-e7ceee5074bf
 # ╠═e923904e-177e-11eb-08d7-8df18ea504a5
 # ╠═fdf13880-1780-11eb-22b5-255c0eef25f9
 # ╟─debc5e2c-1776-11eb-20b9-ab19e1caca8f
