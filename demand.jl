@@ -23,11 +23,11 @@ end
 # ╔═╡ 2fc7676e-2198-11eb-039f-8bf5ed3f4481
 # uncomment below lines if running on binder
 begin
-	#ENV["PYTHON"]=""
-	#Pkg.add("PyCall")
-	#Pkg.build("PyCall")
-	#Pkg.add("SymPy")
-	#using SymPy
+	ENV["PYTHON"]=""
+	Pkg.add("PyCall")
+	Pkg.build("PyCall")
+	Pkg.add("SymPy")
+	using SymPy
 end
 
 # ╔═╡ 2fe607a4-22d9-11eb-00aa-a919fb81c721
