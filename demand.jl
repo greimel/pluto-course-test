@@ -16,8 +16,18 @@ end
 # ╔═╡ ae5ee7be-2102-11eb-2517-bf07efcd17c4
 begin
 	using Pkg
-	Pkg.add(["Plots", "PlutoUI", "SymPy"])
-	using Plots, PlutoUI, SymPy
+	Pkg.add(["Plots", "PlutoUI"])
+	using Plots, PlutoUI
+end
+
+# ╔═╡ 2fc7676e-2198-11eb-039f-8bf5ed3f4481
+# uncomment below lines if running on binder
+begin
+	#ENV["PYTHON"]=""
+	#Pkg.add("PyCall")
+	#Pkg.build("PyCall")
+	#Pkg.add("SymPy")
+	#using SymPy
 end
 
 # ╔═╡ c6e808da-2100-11eb-22e8-1b96706f2fd6
