@@ -113,7 +113,8 @@ end;
 
 # ╔═╡ 4529e838-2103-11eb-36d1-036bbe732597
 begin
-	plot(size = (300, 300), dpi = 40, xlab = "x₁", ylab = "x₂")
+	plot(#size = (300, 300), dpi = 40,
+		xlab = "x₁", ylab = "x₂")
 	# Plot some level curves that are automatically chosen
 	contour!(x₁_grid, x₂_grid, u_grid',
 		  	 color=:lightgray, colorbar=false)
