@@ -21,20 +21,21 @@ begin
 	using PlutoUI, LaTeXStrings, Plots
 end
 
+# ╔═╡ 02b20d78-28e7-11eb-2dc6-9db5a8ae04ee
+md"""**Attention:** This is supplementary material for interested students. The computational material is not relevant for the exam! Prioritize your time wisely! """
+
 # ╔═╡ 8790ae06-28d7-11eb-1b0f-073db2e4b90b
 md"""
-Choose the number of firms ``N_O``:
+Choose the number of firms ``N_O``: $(@bind Nₒ Slider(0:9, default = 6))
 
-$(@bind Nₒ Slider(0:9, default = 6))
-
-Choose the number of firms ``N_N``:
-
-$(@bind Nₙ Slider(0:9, default = 0))
+Choose the number of firms ``N_N``: $(@bind Nₙ Slider(0:9, default = 0))
 """
 
 # ╔═╡ ff52a3ee-28d6-11eb-3563-f9d06b9b713a
 md"""
 # Market Equilibrium
+
+This is an interactive illustration of **Exercise 2** on Problem Set 4B.
 
 Demand is given by
 
@@ -45,7 +46,7 @@ D(p) = \max \{ 42 - 2p, 0 \}.
 There are two types of firms (using **old** and **new** technology). Their supply functions are given by
 
 ```math
-S_O(p) = \begin{cases} p - 1 &\text{if } p \geq 5 \\ 0 &\text{otherwise.} \end{cases}
+S_O(p) = \begin{cases} p - 1 &\text{if } p \geq 5 \\ 0 &\text{otherwise,} \end{cases}
 ```
 
 ```math
@@ -128,6 +129,7 @@ begin
 end
 
 # ╔═╡ Cell order:
+# ╟─02b20d78-28e7-11eb-2dc6-9db5a8ae04ee
 # ╟─ff52a3ee-28d6-11eb-3563-f9d06b9b713a
 # ╟─8790ae06-28d7-11eb-1b0f-073db2e4b90b
 # ╟─aaf3da80-28d7-11eb-2228-6b85433f5355
