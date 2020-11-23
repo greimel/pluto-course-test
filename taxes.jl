@@ -14,7 +14,12 @@ macro bind(def, element)
 end
 
 # ╔═╡ e2aa4dea-2dc5-11eb-0c64-0d4fa9879988
-using PlutoUI, Plots, LaTeXStrings
+begin
+	import Pkg
+	Pkg.activate(mktempdir())
+	Pkg.add(["PlutoUI", "LaTeXStrings", "Plots"])
+	using PlutoUI, LaTeXStrings, Plots
+end
 
 # ╔═╡ 7079c674-2d89-11eb-3038-91ead219646f
 md"""
