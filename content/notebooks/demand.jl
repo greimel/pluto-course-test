@@ -1,6 +1,15 @@
 ### A Pluto.jl notebook ###
 # v0.19.27
 
+#> [frontmatter]
+#> chapter = 1
+#> section = 1
+#> order = 3
+#> title = "Consumer Demand"
+#> layout = "layout.jlhtml"
+#> description = ""
+#> tags = ["microeconomics", "demand"]
+
 using Markdown
 using InteractiveUtils
 

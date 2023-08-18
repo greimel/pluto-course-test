@@ -1,6 +1,15 @@
 ### A Pluto.jl notebook ###
 # v0.19.27
 
+#> [frontmatter]
+#> chapter = 1
+#> section = 1
+#> order = 1
+#> title = "Functions with two variables"
+#> layout = "layout.jlhtml"
+#> description = ""
+#> tags = ["mathemtics"]
+
 using Markdown
 using InteractiveUtils
 

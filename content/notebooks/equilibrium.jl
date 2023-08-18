@@ -1,6 +1,15 @@
 ### A Pluto.jl notebook ###
 # v0.19.27
 
+#> [frontmatter]
+#> chapter = 1
+#> section = 1
+#> order = 5
+#> title = "Market equilibrium"
+#> layout = "layout.jlhtml"
+#> description = ""
+#> tags = ["microeconomics", "equilibrium"]
+
 using Markdown
 using InteractiveUtils
 

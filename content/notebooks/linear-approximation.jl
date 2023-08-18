@@ -1,6 +1,15 @@
 ### A Pluto.jl notebook ###
 # v0.19.27
 
+#> [frontmatter]
+#> chapter = 1
+#> section = 1
+#> order = 2
+#> title = "Linear appoximation"
+#> layout = "layout.jlhtml"
+#> description = ""
+#> tags = ["microeconomics"]
+
 using Markdown
 using InteractiveUtils
 
