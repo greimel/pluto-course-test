@@ -17,6 +17,6 @@ Dict(
         :institution => "University of Amsterdam",
         :institution_url => "http://www.uva.nl",
         :institution_logo => "uva-logo.svg",
-       # :institution_logo_darkmode => "julia-logo-dark.svg"
+        :institution_logo_darkmode => "uva-logo.svg"
     )
 )

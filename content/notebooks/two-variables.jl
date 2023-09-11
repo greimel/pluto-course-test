@@ -8,7 +8,7 @@
 #> title = "Functions with two variables"
 #> layout = "layout.jlhtml"
 #> description = ""
-#> tags = ["mathemtics"]
+#> tags = ["mathematics"]
 
 using Markdown
 using InteractiveUtils
